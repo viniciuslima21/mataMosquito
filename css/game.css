@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+html {
+    cursor: url('../img/killFly.png') 30 30, auto;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fly size */
+.fly-small {
+    height: 50px;
+    width: 50px;
+}
+
+.fly-medium {
+    height: 70px;
+    width: 70px;
+}
+
+.fly-big {
+    height: 90px;
+    width: 90px;
+}
+
+/* Fly side */
+.side-left {
+    transform: scaleX(1);
+}
+
+.side-right {
+    transform: scaleX(-1);
+}
+
+/* Life and Time */
+#panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff6;
+    padding: 15px;
+    border-radius: 0 8px 0 0;
+    font-size: 1rem;
+    backdrop-filter: blur(3px);
+}
+
+#panel p {
+    font-size: 1.3rem;
+}

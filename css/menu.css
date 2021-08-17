@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+html {
+    cursor: url('../img/killFly.png') 30 30, auto;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    filter: drop-shadow(0px 5px 15px rgb(0 0 0 / 30%));
+}
+
+select {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.btn {
+    background-color: #865222;
+    color: #f8f8f8;
+    font-size: 1rem;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+}
+
+.btn:hover {
+    background-color: #77411b;
+    transition: .3s ease;
+}
