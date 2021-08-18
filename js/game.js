@@ -2,7 +2,7 @@
 var height = 0;
 var width = 0;
 var life = 1;
-var time = 30;
+var time = 31;
 var timeCreateFly = 1000;
 
 // Level
@@ -19,7 +19,7 @@ if (level === 'easy') {
     timeCreateFly = 1000;
     document.getElementById('level').innerHTML = 'Difícil';
 } else {
-    window.location.href = './index.html';
+    window.location.href = '../index.html';
 }
 
 // Responsive size of screen
@@ -45,7 +45,7 @@ var timer = setInterval(() => {
 function randomPosition() {
     if (document.getElementById('fly')) {
         document.getElementById('fly').remove();
-        document.getElementById('heart' + life).src = './img/emptyHeart.png';
+        document.getElementById('heart' + life).src = '../img/emptyHeart.png';
 
         life > 2 ? window.location.href = './gameOver.html' : life++;
     }
@@ -57,7 +57,7 @@ function randomPosition() {
     positionX = positionX < 0 ? 0 : positionX;
 
     var fly = document.createElement('img');
-    fly.src = 'img/fly.png';
+    fly.src = '../img/fly.png';
     fly.className = randomSize() + ' ' + randomSide();
     fly.style.position = 'absolute';
     fly.style.top = positionY + 'px';
